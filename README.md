@@ -85,14 +85,15 @@ export default {
 ### Autocomplete supported modules
 
 ```
-"react" | "react-dom" | "react-router-dom" |
+"react" | "react-dom" |
 "antd" | "ahooks" | "@ant-design/charts" |
 "vue" | "vue2" | "@vueuse/shared" |
 "@vueuse/core" | "moment" |
 "eventemitter3" | "file-saver" |
 "browser-md5-file" | "xlsx | "crypto-js" |
 "axios" | "lodash" | "localforage" |
-"mobx" | "lottie-web"
+"mobx" | "lottie-web",
+"i18next" | "react-i18next" | "i18next-browser-languagedetector"
 ```
 
 ### VueUse demo

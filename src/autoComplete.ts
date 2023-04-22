@@ -15,13 +15,6 @@ const modulesConfig = {
 		},
 		mode: 'defer'
 	},
-	'react-router-dom': {
-		var: 'ReactRouterDOM',
-		jsdeliver: {
-			path: 'umd/react-router-dom.min.js'
-		},
-		mode: 'defer'
-	},
 	'antd': {
 		var: 'antd',
 		jsdeliver: {
@@ -149,7 +142,28 @@ const modulesConfig = {
 			path: 'build/player/lottie_light.min.js'
 		},
 		mode: 'defer'
-    }
+    },
+	'i18next': {
+		var: 'i18next',
+		jsdeliver: {
+			path: `dist/umd/i18next.min.js`,
+		},
+		mode: "defer"
+	},
+	'react-i18next': {
+		var: 'ReactI18next',
+		jsdeliver: {
+			path: `react-i18next.min.js`,
+		},
+		mode: "defer"
+	},
+	'i18next-browser-languagedetector': {
+		var: 'i18nextBrowserLanguageDetector',
+		jsdeliver: {
+			path: `i18nextBrowserLanguageDetector.min.js`
+		},
+		mode: "defer"
+	}
 }
 
 export type ModuleName = keyof typeof modulesConfig
