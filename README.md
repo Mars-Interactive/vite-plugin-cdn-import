@@ -1,7 +1,6 @@
-# Import modules from CDN with vite plugin
+# Import modules from CDN with vite plugin + allow specifying script mode like "async" | "defer"
 
-English | [简体中文](README.zh-CN.md)
-
+Origin:
 [![GitHub tag](https://img.shields.io/github/tag/MMF-FE/vite-plugin-cdn-import.svg)](https://github.com/MMF-FE/vite-plugin-cdn-import/releases)
 [![License](https://img.shields.io/github/license/SafdarJamal/vite-template-react)](https://github.com/MMF-FE/vite-plugin-cdn-import/blob/master/LICENSE)
 
@@ -14,13 +13,19 @@ This can reduce build time and improve page load speed in production environment
 Install the plugin with npm:
 
 ```
-npm install vite-plugin-cdn-import --save-dev
+npm install @marsgames/vite-plugin-cdn-import --save-dev
 ```
 
 or yarn
 
 ```
-yarn add vite-plugin-cdn-import -D
+yarn add @marsgames/vite-plugin-cdn-import -D
+```
+
+or pnpm
+
+```
+pnpm install @marsgames/vite-plugin-cdn-import --save-dev
 ```
 
 ## Basic Usage
@@ -29,8 +34,8 @@ Add it to vite.config.js
 
 ```js
 // vite.config.js
-import reactRefresh from '@vitejs/plugin-react-refresh'
-import importToCDN from 'vite-plugin-cdn-import'
+import react from "@vitejs/plugin-react";
+import importToCDN from '@marsgames/vite-plugin-cdn-import';
 
 export default {
     plugins: [
@@ -40,14 +45,17 @@ export default {
                     name: 'react',
                     var: 'React',
                     path: `umd/react.production.min.js`,
+                    mode: "defer",
                 },
                 {
                     name: 'react-dom',
                     var: 'ReactDOM',
                     path: `umd/react-dom.production.min.js`,
+                    mode: "defer",
                 },
             ],
         }),
+        react(),
     ],
 }
 ```
@@ -56,8 +64,8 @@ export default {
 
 ```js
 // vite.config.js
-import reactRefresh from '@vitejs/plugin-react-refresh'
-import importToCDN, { autoComplete } from 'vite-plugin-cdn-import'
+import react from "@vitejs/plugin-react";
+import importToCDN, { autoComplete } from '@marsgames/vite-plugin-cdn-import';
 
 export default {
     plugins: [
@@ -67,7 +75,7 @@ export default {
                 autoComplete('react-dom')
             ],
         }),
-        reactRefresh(),
+        react(),
     ],
 }
 ```
@@ -81,14 +89,15 @@ export default {
 "@vueuse/core" | "moment" | 
 "eventemitter3" | "file-saver" | 
 "browser-md5-file" | "xlsx | "crypto-js" |
-"axios" | "lodash" | "localforage"
+"axios" | "lodash" | "localforage" |
+"mobx" | "mobx-react-lite" | "lottie-web"
 ```
 
 ### VueUse demo
 
 ```js
-import vue from '@vitejs/plugin-vue'
-import importToCDN, { autoComplete } from 'vite-plugin-cdn-import'
+import vue from '@vitejs/plugin-vue';
+import importToCDN, { autoComplete } from '@marsgames/vite-plugin-cdn-import';
 
 export default {
     plugins: [
@@ -119,6 +128,7 @@ export default {
 | var  | A variable that will be assigned to the module in global scope, Rollup requires this  | string            |
 | path | Specify the load path on the CDN                                                      | string / string[] |
 | css  | You can alternatively specify multiple style sheets which will be loaded from the CDN | string / string[] |
+| mode | Specify the script attribute ("async" or "defer" or null)                             | string            |
 
 ## Other CDN pordUrl
 

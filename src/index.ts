@@ -22,9 +22,9 @@ function getModuleVersion(name: string): string {
 }
 
 /**
- * 是否完整的 url
- * @param path 
- * @returns 
+ * url
+ * @param path
+ * @returns
  */
 function isFullPath(path: string) {
     return path.startsWith('http:')
@@ -148,7 +148,7 @@ function PluginImportToCDN(options: Options): Plugin[] {
                 const jsCode = !isBuild
                     ? ''
                     : data
-                        .map(p => p.pathList.map(url => `<script src="${url}"></script>`).join('\n'))
+                        .map(p => p.pathList.map(url => `<script ${p.mode || ''} src="${url}"></script>`).join('\n'))
                         .join('\n')
 
                 return html.replace(

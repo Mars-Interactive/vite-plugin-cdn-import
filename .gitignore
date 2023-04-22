@@ -1,3 +1,14 @@
 node_modules
 .DS_Store
 dist
+.npm
+npm-debug.log*
+.yarn-integrity
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
