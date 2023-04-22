@@ -148,7 +148,7 @@ function PluginImportToCDN(options: Options): Plugin[] {
                 const jsCode = !isBuild
                     ? ''
                     : data
-                        .map(p => p.pathList.map(url => `<script ${p.mode || ''} src="${url}"></script>`).join('\n'))
+                        .map(p => p.pathList.map(url => `<script ${p.mode ? p.mode + ' ' : ''}src="${url}"></script>`).join('\n'))
                         .join('\n')
 
                 return html.replace(
@@ -163,7 +163,7 @@ function PluginImportToCDN(options: Options): Plugin[] {
 }
 
 export {
-    PluginImportToCDN as Plugin,
+    PluginImportToCDN,
     Options,
     autoComplete,
 }

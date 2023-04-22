@@ -4,7 +4,7 @@ export interface Module {
     var: string
     path: string | string[]
     css?: string | string[]
-    mode?: "async" | "defer"
+    mode?: 'async' | 'defer' | ''
 }
 
 export interface Options {

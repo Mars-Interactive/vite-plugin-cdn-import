@@ -1,13 +1,14 @@
 {
     "name": "@marsgames/vite-plugin-cdn-import",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Import packages from CDN for the vite plugin",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
     "keywords": [
         "vite cdn plugin",
-        "vite CDN extension"
+        "vite CDN extension",
+        "vite cdn plugin with script modes"
     ],
     "files": [
         "dist"
