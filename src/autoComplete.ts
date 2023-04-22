@@ -139,7 +139,7 @@ const modulesConfig = {
 	'mobx': {
         var: 'mobx',
         jsdeliver: {
-			path: 'mobx/dist/mobx.umd.production.min.js'
+			path: 'dist/mobx.umd.production.min.js'
 		},
 		mode: 'defer'
     },
