@@ -47,7 +47,7 @@ function renderUrl(url: string, data: {
         .replace(/\{path\}/g, path)
 }
 
-function importToCDN(options: Options): Plugin[] {
+function PluginImportToCDN(options: Options): Plugin[] {
 
     const {
         modules = [],
@@ -163,8 +163,9 @@ function importToCDN(options: Options): Plugin[] {
 }
 
 export {
+    PluginImportToCDN as Plugin,
     Options,
     autoComplete,
 }
 
-export default importToCDN
+export default PluginImportToCDN
