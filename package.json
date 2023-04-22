@@ -1,6 +1,6 @@
 {
     "name": "@marsgames/vite-plugin-cdn-import",
-    "version": "0.0.11",
+    "version": "0.0.12",
     "description": "Import packages from CDN for the vite plugin",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
@@ -32,7 +32,7 @@
     "author": "vfasky<vfasky@me.com> & Mars-Interactive",
     "license": "MIT",
     "devDependencies": {
-        "@types/node": "^18.15.11",
+        "@types/node": "^18.15.13",
         "tsup": "^6.7.0",
         "typescript": "^5.0.4",
         "vite": "^4.2.2"

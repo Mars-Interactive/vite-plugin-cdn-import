@@ -139,7 +139,7 @@ const modulesConfig = {
 	'lottie-web': {
         var: 'lottie',
         jsdeliver: {
-			path: 'build/player/lottie_light.min.js'
+			path: 'build/player/lottie_light_canvas.min.js'
 		},
 		mode: 'defer'
     },
