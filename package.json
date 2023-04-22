@@ -1,6 +1,6 @@
 {
     "name": "@marsgames/vite-plugin-cdn-import",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Import packages from CDN for the vite plugin",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
