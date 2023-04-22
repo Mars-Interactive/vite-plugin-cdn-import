@@ -128,7 +128,7 @@ export default {
 | var  | A variable that will be assigned to the module in global scope, Rollup requires this  | string            |
 | path | Specify the load path on the CDN                                                      | string / string[] |
 | css  | You can alternatively specify multiple style sheets which will be loaded from the CDN | string / string[] |
-| mode | Specify the script attribute ("async" or "defer" or null)                             | string            |
+| mode | Specify the script attribute ("async" or "defer")                             | string            |
 
 ## Other CDN pordUrl
 
