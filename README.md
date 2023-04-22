@@ -37,7 +37,7 @@ Add it to vite.config.js
 ```js
 // vite.config.js
 import react from "@vitejs/plugin-react";
-import importToCDN from '@marsgames/vite-plugin-cdn-import';
+import { Plugin as importToCDN } from '@marsgames/vite-plugin-cdn-import';
 
 export default {
     plugins: [
@@ -67,7 +67,7 @@ export default {
 ```js
 // vite.config.js
 import react from "@vitejs/plugin-react";
-import importToCDN, { autoComplete } from '@marsgames/vite-plugin-cdn-import';
+import { Plugin as importToCDN, autoComplete } from '@marsgames/vite-plugin-cdn-import';
 
 export default {
     plugins: [
@@ -85,11 +85,11 @@ export default {
 ### Autocomplete supported modules
 
 ```
-"react" | "react-dom" | "react-router-dom" | 
-"antd" | "ahooks" | "@ant-design/charts" | 
-"vue" | "vue2" | "@vueuse/shared" | 
-"@vueuse/core" | "moment" | 
-"eventemitter3" | "file-saver" | 
+"react" | "react-dom" | "react-router-dom" |
+"antd" | "ahooks" | "@ant-design/charts" |
+"vue" | "vue2" | "@vueuse/shared" |
+"@vueuse/core" | "moment" |
+"eventemitter3" | "file-saver" |
 "browser-md5-file" | "xlsx | "crypto-js" |
 "axios" | "lodash" | "localforage" |
 "mobx" | "mobx-react-lite" | "lottie-web"
@@ -99,7 +99,7 @@ export default {
 
 ```js
 import vue from '@vitejs/plugin-vue';
-import importToCDN, { autoComplete } from '@marsgames/vite-plugin-cdn-import';
+import { Plugin as importToCDN, autoComplete } from '@marsgames/vite-plugin-cdn-import';
 
 export default {
     plugins: [
