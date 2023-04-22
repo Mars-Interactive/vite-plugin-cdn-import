@@ -92,7 +92,7 @@ export default {
 "eventemitter3" | "file-saver" |
 "browser-md5-file" | "xlsx | "crypto-js" |
 "axios" | "lodash" | "localforage" |
-"mobx" | "mobx-react-lite" | "lottie-web"
+"mobx" | "lottie-web"
 ```
 
 ### VueUse demo
