@@ -6,21 +6,21 @@ const modulesConfig = {
 		jsdeliver: {
 			path: 'umd/react.production.min.js'
 		},
-		mode: 'defer'
+		mode: 'async'
 	},
 	'react-dom': {
 		var: 'ReactDOM',
 		jsdeliver: {
 			path: 'umd/react-dom.production.min.js'
 		},
-		mode: 'defer'
+		mode: 'async'
 	},
 	'react-router-dom': {
 		var: 'ReactRouterDOM',
 		jsdeliver: {
 			path: 'umd/react-router-dom.min.js'
 		},
-		mode: 'defer'
+		mode: 'async'
 	},
 	'antd': {
 		var: 'antd',
@@ -49,7 +49,7 @@ const modulesConfig = {
 		jsdeliver: {
 			path: 'dist/vue.global.prod.js'
 		},
-		mode: 'defer'
+		mode: 'async'
 	},
 	'vue2': {
 		var: 'Vue',
@@ -57,21 +57,21 @@ const modulesConfig = {
 			name: 'vue',
 			path: 'dist/vue.runtime.min.js'
 		},
-		mode: 'defer'
+		mode: 'async'
 	},
 	'@vueuse/shared': {
 		var: 'VueUse',
 		jsdeliver: {
 			path: 'index.iife.min.js'
 		},
-		mode: 'defer'
+		mode: 'async'
 	},
 	'@vueuse/core': {
 		var: 'VueUse',
 		jsdeliver: {
 			path: 'index.iife.min.js'
 		},
-		mode: 'defer'
+		mode: 'async'
 	},
 	'moment': {
 		var: 'moment',
@@ -134,21 +134,21 @@ const modulesConfig = {
         jsdeliver: {
 			path: 'dist/localforage.min.js'
 		},
-		mode: 'defer'
+		mode: 'async'
     },
 	'mobx': {
         var: 'mobx',
         jsdeliver: {
 			path: 'dist/mobx.umd.production.min.js'
 		},
-		mode: 'defer'
+		mode: 'async'
     },
 	'mobx-react-lite': {
         var: 'mobxReactLite',
         jsdeliver: {
 			path: 'dist/mobxreactlite.umd.production.min.js'
 		},
-		mode: 'defer'
+		mode: 'async'
     },
 	'lottie-web': {
         var: 'lottie',

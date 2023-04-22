@@ -47,13 +47,13 @@ export default {
                     name: 'react',
                     var: 'React',
                     path: `umd/react.production.min.js`,
-                    mode: "defer"
+                    mode: "async"
                 },
                 {
                     name: 'react-dom',
                     var: 'ReactDOM',
                     path: `umd/react-dom.production.min.js`,
-                    mode: "defer"
+                    mode: "async"
                 },
             ],
         }),
