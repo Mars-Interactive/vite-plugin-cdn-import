@@ -8,7 +8,7 @@ Allows you to specify modules to be introduced in a production environment using
 
 This can reduce build time and improve page load speed in production environments.
 
-<b>In addition (added to this fork): allow specifying script mode like "async" | "defer" and updated all related dependencies</b>
+<b>In addition (added to this fork): allow specifying script mode like "async" | "defer" and updated all related dependencies and extra autoComplete modules</b>
 
 ## Installation
 
